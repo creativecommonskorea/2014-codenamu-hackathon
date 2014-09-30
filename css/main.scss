@@ -96,7 +96,7 @@ h6 {
 	color: #27AAE1;
 }
 
-.intro h3 {
+.intro h3, .intro h4 {
 	text-align: center;
 	color: #5D5E5E;
 }
@@ -135,26 +135,35 @@ h6 {
 .intro-header > a {
 	position: absolute;
 	bottom: 5%;
-	left: 48%;
+	left: 46%;
 }
 
 @media(max-width:767px) {
 		.intro h1 {
-			font-size: 35px;
+			font-size: 30px;
 		}
+
+		.intro h3 {
+			font-size: 20px;
+		}
+
 		.intro-header {
 			min-height: 300px;
 		}
 		.intro-header > a {
-			left: 37%;
+			left: 30%;
 		}
 
     .intro-message {
         padding-bottom: 15%;
     }
 
-    .intro-message > h1 {
-        font-size: 3em;
+    .intro-message > h3 {
+        font-size: 15px;
+    }
+
+    .intro-message > h4 {
+    	font-size: 15px;
     }
 
     ul.intro-social-buttons > li {
@@ -203,7 +212,8 @@ h6 {
 .banner {
     padding: 70px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat 0px -140px;
+    background-color: #27AAE1;
+    //background: url(../img/banner-bg.jpg) no-repeat 0px -140px;
     background-size: cover;
 }
 
@@ -213,6 +223,9 @@ h6 {
     font-size: 3em;
 }
 
+.banner a {
+	color: #5D5E5E;
+}
 .banner ul {
     margin-bottom: 0;
 }
