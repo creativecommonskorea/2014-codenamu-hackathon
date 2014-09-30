@@ -1,14 +1,9 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: 2014 제 3회 코드나무 해커톤
+email: creative@cckorea.org
+description: > # 해커톤을 가장한 코딩 MT! 코드나무와 함께 하는 팀(커뮤니티)들과 함께 죽어가는 지난 서비스들에게 숨을 불어넣는, 묵혀놓았던 프로젝트들을 꺼내어 만들어보는, 지속 가능한 시빅 해킹(Civic hacking)을 위한 해커톤을 가장한 MT입니다.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://2014hack.codenamu.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
