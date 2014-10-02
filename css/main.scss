@@ -132,9 +132,13 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.intro-message > h4 {
+  line-height: 1.5;
+}
+
 .intro-header > a {
 	position: relative;
-	margin-top: 380px;
+	margin-top: 340px;
 }
 
 @media(max-width:767px) {
