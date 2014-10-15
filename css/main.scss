@@ -34,9 +34,9 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
 
 
@@ -53,8 +53,8 @@ $on-laptop:        800px;
 
 body,
 html {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 body,
@@ -64,13 +64,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
 }
 
 .lead {
-    font-size: 18px;
-    font-weight: 400;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .intro {
@@ -102,38 +102,36 @@ h6 {
 }
 
 .intro-header {
-    // padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    // padding-bottom: 50px;
-    min-height: 600px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
+	min-height: 600px;
+	text-align: center;
+	color: #f8f8f8;
+	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
 }
 
 .intro-message {
-    position: relative;
+	position: relative;
 }
 
 .intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	font-size: 5em;
 }
 
 .intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .intro-message > h4 {
-  line-height: 1.5;
+	line-height: 1.5;
 }
 
 .intro-header > a {
@@ -142,144 +140,156 @@ h6 {
 }
 
 @media(max-width:767px) {
-		.intro h1 {
-			font-size: 30px;
-		}
+	.intro h1 {
+		font-size: 30px;
+	}
 
-		.intro h3 {
-			font-size: 20px;
-		}
+	.intro h3 {
+		font-size: 20px;
+	}
 
-		.intro-header {
-			min-height: 500px;
-		}
-		.intro-header > a {
-			margin-top: 250px;
-		}
+	.intro-header {
+		min-height: 500px;
+	}
+	.intro-header > a {
+		margin-top: 250px;
+	}
 
-    .intro-message {
-        padding-bottom: 15%;
-    }
+	.intro-message {
+		padding-bottom: 15%;
+	}
 
-    .intro-message > h3 {
-        font-size: 15px;
-    }
+	.intro-message > h3 {
+		font-size: 15px;
+	}
 
-    .intro-message > h4 {
-    	font-size: 15px;
-    }
+	.intro-message > h4 {
+		font-size: 15px;
+	}
 
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
+	ul.intro-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
 
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+	ul.intro-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
 
-    .intro-divider {
-        width: 100%;
-    }
+	.intro-divider {
+		width: 100%;
+	}
 }
 
 .network-name {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
 }
 
 .content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+	padding: 50px 0;
+	background-color: #f8f8f8;
 }
 
 .content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+	padding: 50px 0;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
 }
 
 .section-heading {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
+	float: left;
+	width: 200px;
+	border-top: 3px solid #e7e7e7;
 }
 
 .banner {
-    padding: 70px 0;
-    color: #f8f8f8;
-    background-color: #27AAE1;
-    //background: url(../img/banner-bg.jpg) no-repeat 0px -140px;
-    background-size: cover;
+	padding: 70px 0;
+	color: #f8f8f8;
+	background-color: #27AAE1;
 }
 
 .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	font-size: 3em;
 }
 
 .banner a {
 	color: #5D5E5E;
 }
 .banner ul {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .banner-social-buttons {
-    float: right;
-    margin-top: 0;
+	float: right;
+	margin-top: 0;
 }
 
 @media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
+	ul.banner-social-buttons {
+		float: left;
+		margin-top: 15px;
+	}
 }
 
 @media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
+	.banner h2 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		font-size: 3em;
+	}
 
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
+	ul.banner-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
 
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+	ul.banner-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+	padding: 50px 0;
+	background-color: #f8f8f8;
 }
 
 p.copyright {
-    margin: 15px 0 0;
+	margin: 15px 0 0;
 }
 
 .team {
-  padding-right: 6em;
+	padding-right: 6em;
 }
 
 .iwantu {
-    text-align: center;
+	text-align: center;
 }
 
 .iwantu img {
-    margin: 0 auto;
+	margin: 0 auto;
+}
+
+.sponsor {
+	padding-bottom: 50px;
+}
+
+.sponsor img {
+	margin-left: 50px;
+}
+
+@media(max-width:767px) {
+		.sponsor img {
+			margin-bottom: 30px;
+		}
 }

@@ -1,0 +1,15 @@
+- name: "NIPA"
+  img: "nipa.png"
+  url: "http://www.nipa.kr/"
+  width: "400"
+
+- name: "서울시"
+  img: "seoul.gif"
+  url: "http://www.seoul.go.kr"
+  width: "200"
+
+- name: "Naver D2"
+  img: "naver_d2.png"
+  url: "http://developer.naver.com/wiki/pages/techSupport"
+  width: "200"
+
