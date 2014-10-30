@@ -271,6 +271,9 @@ p.copyright {
 
 .team {
 	padding-right: 6em;
+	padding-bottom: 2em;
+	margin-bottom: 3em;
+	border-bottom: 1px solid #ccc;
 }
 
 .iwantu {
@@ -290,9 +293,9 @@ p.copyright {
 }
 
 @media(max-width:767px) {
-		.sponsor img {
-			margin-bottom: 30px;
-		}
+	.sponsor img {
+		margin-bottom: 30px;
+	}
 }
 
 .embed-container {
