@@ -294,3 +294,33 @@ p.copyright {
 			margin-bottom: 30px;
 		}
 }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.wrap h2 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+}
+.more {
+  float: right;
+  text-decoration: none;
+  margin-top: 1.5em;
+  margin-right: 1em;
+  font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
+  text-rendering: optimizeLegibility
+}
