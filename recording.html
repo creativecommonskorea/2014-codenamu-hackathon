@@ -23,7 +23,17 @@ permalink: /recording/
   <h2>사진</h2>
 </div>
 <div class="row">
-
+  <div class="owl-carousel">
+    <div><img src="/img/pics/15027714633_cf2571109c_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15469797510_54ff68f076_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15035211343_9a6ef7438a_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15624162226_0962024103_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15035228413_441a131f5e_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15648696912_e71713dc2e_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15461653848_9e8c09fca4_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15652702201_082b9211fb_z.jpg" alt=""></div>
+    <div><img src="/img/pics/15468739109_1ffda28d3b_z.jpg" alt=""></div>
+  </div>
 </div>
 
 <div class="wrap clearfix">
@@ -74,3 +84,21 @@ permalink: /recording/
 </div>
 
 
+<!-- Basic stylesheet -->
+<link rel="stylesheet" href="/owl-carousel/owl.carousel.css">
+
+ <!-- Default Theme -->
+<link rel="stylesheet" href="/owl-carousel/owl.theme.css">
+
+<!-- Include js plugin -->
+<script src="/owl-carousel/owl.carousel.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+    });
+  });
+</script>
