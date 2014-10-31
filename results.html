@@ -70,10 +70,67 @@ permalink: /results/
     <iframe src="http://ghbtns.com/github-btn.html?user=remotty&repo=open-idol-web&type=fork&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
   </div>
+
   <div class="col-lg-6 team">
     <h3 class="section-heading">TEAM OH</h3>
     <h4><a href="https://github.com/codenamu/team_5">https://github.com/codenamu/team_5</a></h4>
-    <p class="lead">지난 코드나무 공공데이터 해커톤 1, 2회에 참석하여 서비스를 만들 고 나서 추후 만남을 지속하고 있는 팀으로, 어린이집, 유치원 공공정보를 이용해 우리아이에 게 가장 적합한 시설을 손쉽게 비교/검색이 가능한 서비스를 진행 중입니다.</p>
+    <p class="lead">2014 코드나무 해커톤 OH!팀이 만든 우샤히디 서비스</p>
+    <div id="team5"></div>
+
+    <iframe src="http://ghbtns.com/github-btn.html?user=codenamu&repo=team_5&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+    <iframe src="http://ghbtns.com/github-btn.html?user=codenamu&repo=team_5&type=fork&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+
   </div>
+
 </div>
-</div>
+<script type="text/javascript">
+
+jQuery.getGithub = function(owner, repo, callback) {
+  jQuery.getJSON('https://api.github.com/repos/' + owner + '/' + repo + '/events?callback=?', callback);
+}
+
+jQuery.fn.extend({
+  showGHLog: function(owner, repo) {
+    $.getGithub(owner, repo, function(data) {
+
+      $.each(data.data, function(index, row){
+        console.log(row);
+        // console.log(row.payload.commits.message);
+        var time = row.created_at;
+        var author = row.actor.login;
+        var message = row.payload.commits[0].message;
+        console.log(time + ' : ' + author + ' : ' + row.type + ' : ' + message);
+      });
+
+    });
+  }
+});
+
+$('#team5').showGHLog('codenamu', 'team_5');
+
+/*function foo(response) {
+  var data = response.data;
+  var markup;
+
+  $.each(data, function(index, row){
+    console.log(row.type);
+    // console.log(row.payload.commits.message);
+    var time = row.created_at;
+    var author = row.actor.login;
+    // var message = row.paylod.commits.message;
+    console.log(time + ' : ' + author);
+  });
+
+  $('#team5').html(markup);
+  console.log(data);
+}
+
+var script = document.createElement('script');
+script.src = 'https://api.github.com/repos/codenamu/team_5/events?callback=foo';
+
+document.getElementsByTagName('head')[0].appendChild(script);
+
+*/
+</script>
