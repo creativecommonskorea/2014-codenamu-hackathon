@@ -327,3 +327,24 @@ p.copyright {
   font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
   text-rendering: optimizeLegibility
 }
+
+.table-list-cell {
+	position: relative;
+	display: table-cell;
+	padding: 8px 10px;
+	font-size: 12px;
+	vertical-align: top;
+	border-top: 1px solid #eee;
+}
+
+p.commit-title {
+	margin-bottom: 0;
+}
+
+.commits-listing ol {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
